@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Emission Dashboard</h1>
+
+    <h2 id="total"></h2>
+    <h3 id="risk"></h3>
+
+    <div class="chart-container">
+    <canvas id="pieChart"></canvas>
+</div>
+
+    <div id="suggestions"></div>
+
+    <h3>Carbon Neutrality Tips</h3>
+   <ul class="tips">
+    <li><i class="fa-solid fa-solar-panel"></i> Switch to renewable energy</li>
+    <li><i class="fa-solid fa-gas-pump"></i> Reduce diesel consumption</li>
+    <li><i class="fa-solid fa-tree"></i> Plant trees</li>
+    <li><i class="fa-solid fa-recycle"></i> Adopt green technologies</li>
+</ul>
+
+    <h3>Carbon Reduction Goal</h3>
+    <p id="goal"></p>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

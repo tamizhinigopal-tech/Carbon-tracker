@@ -1,0 +1,139 @@
+.dyno {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+   
+   background: linear-gradient(120deg,rgb(222, 220, 220),rgb(174, 249, 212),rgb(226, 225, 225) );
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    color: black;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    padding: ;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* FORM CARD */
+.form-card {
+    background: white;
+    width: 400px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* INPUT GROUP */
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #ecf0f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.input-group i {
+    margin-right: 10px;
+    color: #27ae60;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+}
+
+/* BUTTON */
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #27ae60;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #219150;
+    transform: scale(1.05);
+}
+
+/* LOADING */
+#loading {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+h2 {
+    color: #27ae60;
+}
+
+ p {
+    background: #ecf0f1;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+}
+.chart-container {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+.container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+
+ul li {
+    background: #ecf0f1;
+    margin: 5px auto;
+    padding: 8px 12px;
+    border-radius: 6px;
+    width: fit-content;
+}
+#suggestions i {
+    color: #27ae60;
+    margin-right: 8px;
+}
+
+.tips i {
+    color: #2ecc71;
+    margin-right: 8px;
+}
+
+.tips i {
+    margin: 5px 0;
+    text-align:center;
+}

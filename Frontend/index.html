@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carbon Footprint Tracker</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dyno" >
+
+<div class="hero">
+    
+    <h1><i class="fa-solid fa-earth-asia"></i> Carbon Footprint Tracker</h1>
+    <p>Smart Emission Analysis for Sustainable Coal Mining</p>
+</div>
+
+<div class="form-card">
+    <h2>Enter Mine Details</h2>
+
+    <form id="carbonForm">
+
+        <div class="input-group">
+            <i class="fa-solid fa-industry"></i>
+            <input type="text" placeholder="Mine Name" id="mineName" required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa-solid fa-weight-hanging"></i>
+            <input type="number" placeholder="Coal Production (tons)" id="coalProduction" required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa-solid fa-gas-pump"></i>
+            <input type="number" placeholder="Diesel Usage (liters)" id="dieselUsage" required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa-solid fa-bolt"></i>
+            <input type="number" placeholder="Electricity Usage (kWh)" id="electricityUsage" required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa-solid fa-truck"></i>
+            <input type="number" placeholder="Number of Vehicles" id="vehicles" required>
+        </div>
+
+        <button type="submit">
+            <i class="fa-solid fa-calculator"></i> Calculate Emissions
+        </button>
+    </form>
+
+    <div id="loading" class="hidden">⏳ Calculating emissions...</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
