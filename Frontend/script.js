@@ -13,7 +13,7 @@ form.addEventListener("submit", async (e) => {
         vehicles: Number(document.getElementById("vehicles").value)
     };
 
-    const response = await fetch("http://localhost:5000/calculate-emissions", {
+    const response = await fetch("/calculate-emissions", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(data)
