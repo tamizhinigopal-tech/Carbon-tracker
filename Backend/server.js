@@ -1,10 +1,15 @@
 // Import required modules
+const path = require("path");
 const express = require("express");
 const cors = require("cors");
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "../Frontend")));
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "../Frontend/index.html"));
+});
 
 // Emission factors (given)
 const DIESEL_FACTOR = 2.68; // kg CO2 per liter
@@ -74,6 +79,8 @@ app.post("/calculate-emissions", (req, res) => {
 });
 
 // Start server
-app.listen(5000, () => {
-    console.log("Server running on http://localhost:5000");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
