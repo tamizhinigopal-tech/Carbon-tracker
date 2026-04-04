@@ -14,28 +14,23 @@ form.addEventListener("submit", async (e) => {
     };
 
     fetch("/calculate-emissions", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-        mineName,
-        coalProduction,
-        dieselUsage,
-        electricityUsage,
-        vehicles
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)   // ✅ FIXED
     })
-})
-.then(response => response.json())
-.then(data => {
-    console.log(data);
+    .then(response => response.json())
+    .then(result => {
+        console.log(result);
 
-    // ✅ STORE DATA
-    localStorage.setItem("emissionData", JSON.stringify(data));
+        // ✅ MATCH dashboard.js
+        localStorage.setItem("result", JSON.stringify(result));
 
-    // ✅ REDIRECT TO DASHBOARD PAGE
-    window.location.href = "dashboard.html";
-})
-.catch(error => {
-    console.error("Error:", error);
+        // ✅ REDIRECT
+        window.location.href = "dashboard.html";
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
 });
