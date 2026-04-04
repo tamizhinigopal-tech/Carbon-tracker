@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="Screenshot (92)" src="https://github.com/user-attachments/assets/170a9854-ff5e-49c3-a3f4-b5f6419941d4" /># 🌍 Carbon Emission Tracker
+## 🌍 Carbon Emission Tracker
 
 ## 📌 Project Overview
 
