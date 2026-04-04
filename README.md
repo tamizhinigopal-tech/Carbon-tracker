@@ -68,6 +68,8 @@ The Carbon Emission Tracker is a full-stack web application that helps estimate 
 
 ## 👩‍💻 Author
 
-Tamizhini Gopalakrishnan
+Tamizhini G
+Shanmugapriya N
+Shankari T
 
 ---
